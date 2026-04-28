@@ -28,16 +28,24 @@ def donuts(count):
 # If the string length is less than 3, leave it unchanged.
 # Return the resulting string.
 def verbing(s):
-    if s.len()>= 3:
-        if s.
-        s.append('ing')
-    
-    
-    return  
-
+    if len(s)>= 3:
+        if s[-3:] == "ing":
+            s = s + "ly"
+        else:
+            s = s + "ing"
+    return s
+      
+# Remove adjacent
+# Given a list of numbers, return a list where
+# all adjacent == elements have been reduced to a single element,
+# so [1, 2, 2, 3] returns [1, 2, 3]. You may create a new list or
+# modify the passed in list.
 def remove_adjacent(nums):
-# +++ your code here +++
-    return
+    result = []
+    for num in nums:
+        if len(result) == 0 or num != result[-1]:
+            result.append(num)  
+    return result
 
 def main():
     print('donuts')
