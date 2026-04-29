@@ -20,9 +20,9 @@ def donuts(count):
         # 2nd if clause determines whether input integer
         # is greater equal 10 and acts then according the task 
         if count >= 10:
-            return "Count: Many"
+            return "Number of donuts: Many"
         else: 
-            return "Count: " + str(count)
+            return "Number of donuts: " + str(count)
     else: 
         return "Your input is not an integer!"
 
